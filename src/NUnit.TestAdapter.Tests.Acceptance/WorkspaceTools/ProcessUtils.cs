@@ -41,14 +41,14 @@ namespace NUnit.VisualStudio.TestAdapter.Tests.Acceptance.WorkspaceTools
             {
                 if (e.Data is null) return;
 
-                Console.Writeline(e.Data);               
+                Console.WriteLine(e.Data);               
             };
 
             process.ErrorDataReceived += (sender, e) =>
             {
                 if (e.Data is null) return;
 
-                Console.Writeline(e.Data);               
+                Console.WriteLine(e.Data);               
             };
 
             process.Start();
